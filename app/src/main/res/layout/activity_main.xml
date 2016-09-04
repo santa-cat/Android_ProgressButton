@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.santa.pathanim.MainActivity">
+
+
+
+    <com.example.santa.pathanim.ProgressButton
+        android:id="@+id/progress_button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textSize="30dp" />
+
+    <com.example.santa.pathanim.ProgressButton
+        android:layout_marginTop="30dp"
+        android:id="@+id/progress_err"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/activity_vertical_margin"
+        android:textSize="30dp"/>
+
+    <com.example.santa.pathanim.ProgressButton
+        android:layout_marginTop="30dp"
+        android:id="@+id/progress_succRect"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/activity_vertical_margin"
+        app:pb_bgRadius="0dp"
+        app:pb_textDef="下载"
+        app:pb_textSucc="打开"
+        app:pb_textErr="重新下载"
+        android:textSize="25dp"/>
+
+    <com.example.santa.pathanim.ProgressButton
+        android:layout_marginTop="30dp"
+        android:id="@+id/progress_errRect"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/activity_vertical_margin"
+        app:pb_bgRadius="0dp"
+        app:pb_textDef="下载"
+        app:pb_textSucc="打开"
+        app:pb_textErr="下载失败"
+        android:textSize="25dp"/>
+</LinearLayout>
